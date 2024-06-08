@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+algebraCalc/__init__.py
+algebraCalc/formula.py
+algebraCalc/matrix.py
+algebraCalc/vector.py
+algebraCalc.egg-info/PKG-INFO
+algebraCalc.egg-info/SOURCES.txt
+algebraCalc.egg-info/dependency_links.txt
+algebraCalc.egg-info/requires.txt
+algebraCalc.egg-info/top_level.txt
