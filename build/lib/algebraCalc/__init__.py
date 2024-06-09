@@ -5,9 +5,6 @@ from .vector import(
     angle,
     projection
 )
-from .formula import(
-    pyth
-)
 from .matrix import(
     add,
     det,
@@ -15,6 +12,14 @@ from .matrix import(
     adjoint,
     multiplication,
     transpose
+)
+from .util import(
+    scale,
+    printMatrix,
+    printVector,
+    randomMatrix,
+    randomVector,
+    solveSystem,
 )
 
 __all__ = [
@@ -29,5 +34,10 @@ __all__ = [
     "cross",
     "angle",
     "projection",
-    "pyth"
+    "scale",
+    "printMatrix",
+    "printVector",
+    "randomMatrix",
+    "randomVector",
+    "solveSystem"
 ]

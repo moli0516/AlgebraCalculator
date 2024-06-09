@@ -4,7 +4,7 @@ format: list(list(int))
 
 def add(a: list, b: list) -> list:
     if(len(a) != len(b) or len(a[0]) != len(b[0])):
-        return None
+        raise ValueError("The dimension of two matrix is not same.")
     else:
         newMatrix = []
         for i in range(len(a)):
@@ -45,7 +45,7 @@ def multiplication(a: list, b: list) -> list:
      
     """
     if(len(a[0]) != len(b)):
-        return None
+        raise ValueError("The number of column or the first matrix is not equal to the number of row of the second matrix.")
     else:
         newMatrix = []
         for i in range(len(a)):
@@ -86,7 +86,17 @@ def adjoint(a: list) -> list:
 
 def inverse(a: list) -> list:
     newMatrix = adjoint(a)
+    if(det(a) == 0):
+        raise ValueError("The determinant of the matrix is 0, which the matrix is singular.")
     for i in range(len(a)):
         for j in range(len(a[0])):
             newMatrix[i][j] = 1 / det(a) * newMatrix[i][j]
-    return newMatrix    
+    return newMatrix
+
+a = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+b = [[1],
+     [2],
+     [3]]
+print(multiplication(a, b))

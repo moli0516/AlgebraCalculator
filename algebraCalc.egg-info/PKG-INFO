@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: algebraCalc
+Version: 1.0.4
+Summary: A tool for solving problems invloving matrix and vector
+Home-page: https://github.com/moli0516/AlgebraCalculator
+Download-URL: https://pypi.org/project/algebraCalc/
+Author: Moli
+Author-email: kyeung516@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENCE

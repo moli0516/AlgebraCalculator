@@ -14,12 +14,15 @@ def dot(a: list, b: list) -> float:
             bCol.append([b[0][i]])
         return multiplication(a, bCol)[0][0]
 
-def angle(a: list, b: list) -> float:
-    return math.acos(dot(a, b) / (magnitude(a) * magnitude(b))) / math.pi * 180
+def angle(a: list, b: list, mode: bool) -> float:
+    if(mode):
+        return math.acos(dot(a, b) / (magnitude(a) * magnitude(b)))
+    else:
+        return math.acos(dot(a, b) / (magnitude(a) * magnitude(b))) / math.pi * 180
 
 def cross(a: list, b: list) -> list:
     if(a == b):
-        return [0, 0, 0]
+        return [[0, 0, 0]]
     else:
         crossVector = []
         crossMatrix = [[1, 1, 1], a[0], b[0]]

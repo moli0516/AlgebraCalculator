@@ -1,5 +1,5 @@
 import pathlib
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
  
 HERE = pathlib.Path(__file__).parent.resolve()
  
@@ -10,7 +10,7 @@ URL = "https://github.com/moli0516/AlgebraCalculator"
 DOWNLOAD_URL = "https://pypi.org/project/algebraCalc/"
  
 LICENSE = "MIT"
-VERSION = "1.0.3"
+VERSION = "1.0.4-1"
 DESCRIPTION = "A tool for solving problems invloving matrix and vector"
 LONG_DESCRIPTION = (HERE / "docs" / "README.md").read_text(encoding="utf8")
 LONG_DESC_TYPE = "text/markdown"
@@ -38,6 +38,7 @@ setup(
     python_requires=PYTHON_REQUIRES,
     install_requires=INSTALL_REQUIRES,
     extras_require=EXTRAS_REQUIRE,
-    packages=find_packages(),
+    package_dir={'': 'src'},
+    packages=find_namespace_packages(where='src'),
     classifiers=CLASSIFIERS,
 )
