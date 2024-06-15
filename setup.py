@@ -10,7 +10,7 @@ URL = "https://github.com/moli0516/AlgebraCalculator"
 DOWNLOAD_URL = "https://pypi.org/project/algebraCalc/"
  
 LICENSE = "MIT"
-VERSION = "1.0.4-1"
+VERSION = "1.0.5"
 DESCRIPTION = "A tool for solving problems invloving matrix and vector"
 LONG_DESCRIPTION = (HERE / "docs" / "README.md").read_text(encoding="utf8")
 LONG_DESC_TYPE = "text/markdown"

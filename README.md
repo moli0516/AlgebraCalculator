@@ -2,16 +2,17 @@
 >
 > ### By Moli
 >
-> ![Static Badge](https://img.shields.io/badge/pypi-v1.0.3-blue) ![Static Badge](https://img.shields.io/badge/python-3-blue) ![Static Badge](https://img.shields.io/badge/licence-MIT-yellow)
-
+> ![Static Badge](https://img.shields.io/badge/pypi-v1.0.5-blue) ![Static Badge](https://img.shields.io/badge/python-3-blue) ![Static Badge](https://img.shields.io/badge/licence-MIT-yellow)
 ---
-
 ## Install
 
 ```shell
 # Windows
 py -3 -m pip install algebraCalc
 ```
+---
+## Update
+> ### Improved solveSystem function's algorithm
 ---
 ## Data Format
 ### Matrix
